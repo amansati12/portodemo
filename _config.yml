@@ -3,8 +3,8 @@ email: "hello@nexacreative.example"
 description: >-
   A premium Jekyll and Bootstrap 5 creative agency website with modern sections,
   smooth animations, responsive layouts, and SEO-ready metadata.
-baseurl: ""
-url: ""
+baseurl: "/portodemo"
+url: "https://amansati12.github.io"
 lang: "en"
 timezone: "UTC"
 
