@@ -1,0 +1,28 @@
+title: "Nexa Creative Studio"
+email: "hello@nexacreative.example"
+description: >-
+  A premium Jekyll and Bootstrap 5 creative agency website with modern sections,
+  smooth animations, responsive layouts, and SEO-ready metadata.
+baseurl: ""
+url: ""
+lang: "en"
+timezone: "UTC"
+
+author:
+  name: "Nexa Creative Studio"
+  logo: "/assets/images/client-1.png"
+
+social:
+  twitter: "nexacreative"
+  linkedin: "nexa-creative-studio"
+
+sass:
+  sass_dir: assets/css
+  style: compressed
+
+plugins: []
+
+exclude:
+  - work
+  - outputs
+  - README.md

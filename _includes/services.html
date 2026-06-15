@@ -1,0 +1,32 @@
+<section class="services-section section-spacious" id="services" aria-labelledby="services-title">
+  <div class="container">
+    <div class="row align-items-end mb-5">
+      <div class="col-lg-7">
+        <p class="eyebrow reveal">Services</p>
+        <h2 class="section-title reveal" id="services-title">Brand, product, and growth work with a sharper point of view.</h2>
+      </div>
+      <div class="col-lg-5">
+        <p class="section-copy reveal">Swap the service names, descriptions, and images below to match your studio offering. Each card is built for fast scanning and mobile-friendly browsing.</p>
+      </div>
+    </div>
+
+    <div class="row g-4">
+      {% assign services = "Brand Development|Identity systems, positioning, and launch-ready messaging.|service-1.jpg||Content Marketing|Editorial planning, campaign content, and conversion-focused assets.|service-2.jpg||Graphic Design|Premium visual systems for digital, print, packaging, and social.|service-3.jpg||Web Development|Fast, accessible, SEO-ready sites built with modern frontend standards.|service-4.jpg||UX Design|Research-led journeys, wireframes, prototypes, and usability refinement.|service-5.jpg||App Development|Useful product experiences for web apps, portals, and mobile interfaces.|service-6.jpg||Logo Design|Distinct marks and flexible brand assets that scale across channels.|service-7.jpg||Creative Advertising|Campaign ideas, launch concepts, and high-performing digital ads.|service-8.jpg" | split: "||" %}
+      {% for item in services %}
+        {% assign parts = item | split: "|" %}
+        <div class="col-sm-6 col-lg-3 reveal">
+          <article class="service-card h-100">
+            <div class="service-image">
+              <img src="{{ '/assets/images/' | append: parts[2] | relative_url }}" alt="{{ parts[0] }} service visual" width="520" height="380" loading="lazy">
+            </div>
+            <div class="service-body">
+              <span class="service-number">{% if forloop.index < 10 %}0{{ forloop.index }}{% else %}{{ forloop.index }}{% endif %}</span>
+              <h3>{{ parts[0] }}</h3>
+              <p>{{ parts[1] }}</p>
+            </div>
+          </article>
+        </div>
+      {% endfor %}
+    </div>
+  </div>
+</section>

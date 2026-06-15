@@ -1,0 +1,35 @@
+<header class="site-header fixed-top" data-site-header>
+  <nav class="navbar navbar-expand-lg" aria-label="Primary navigation">
+    <div class="container">
+      <a class="navbar-brand" href="{{ '/' | relative_url }}" aria-label="{{ site.title }} home">
+        <span class="brand-mark">N</span>
+        <span class="brand-text">Nexa</span>
+      </a>
+
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#primaryNav" aria-controls="primaryNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="primaryNav">
+        <ul class="navbar-nav ms-auto align-items-lg-center">
+          <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="#about">About Us</a></li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#services" role="button" data-bs-toggle="dropdown" aria-expanded="false">Services</a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="#services">Brand Development</a></li>
+              <li><a class="dropdown-item" href="#services">Content Marketing</a></li>
+              <li><a class="dropdown-item" href="#services">Web Development</a></li>
+              <li><a class="dropdown-item" href="#services">UX Design</a></li>
+            </ul>
+          </li>
+          <li class="nav-item"><a class="nav-link" href="#journal">Blog</a></li>
+          <li class="nav-item"><a class="nav-link" href="#portfolio">Portfolio</a></li>
+          <li class="nav-item ms-lg-3">
+            <a class="btn btn-sm btn-primary rounded-pill px-4" href="#contact">Contact Us</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+</header>

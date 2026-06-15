@@ -1,0 +1,24 @@
+<section class="clients-section section-spacious" aria-labelledby="clients-title">
+  <div class="container">
+    <div class="row align-items-center mb-4">
+      <div class="col-lg-5">
+        <p class="eyebrow reveal">Experience and partners</p>
+        <h2 class="section-title reveal" id="clients-title">Trusted by brands building their next chapter.</h2>
+      </div>
+      <div class="col-lg-7">
+        <p class="section-copy reveal">Replace these logo placeholders with approved client marks. The carousel is CSS-driven for speed and includes duplicate items for a seamless loop.</p>
+      </div>
+    </div>
+  </div>
+  <div class="logo-marquee reveal" aria-label="Client logo carousel">
+    <div class="logo-track">
+      {% for loop in (1..2) %}
+        {% for i in (1..6) %}
+          <div class="client-logo">
+            <img src="{{ '/assets/images/client-' | append: i | append: '.png' | relative_url }}" alt="Client {{ i }} logo" width="180" height="80" loading="lazy">
+          </div>
+        {% endfor %}
+      {% endfor %}
+    </div>
+  </div>
+</section>
